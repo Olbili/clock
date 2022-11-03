@@ -1,0 +1,141 @@
+body {
+    background: rgb(91, 114, 81);
+}
+
+.global {
+    width: 300px;
+    height: 300px;
+    margin: 200px auto;
+    border-radius: 50%;
+    position: relative;
+    background: #cecece;
+    border: 1px solid rgb(118, 118, 118);
+    box-shadow: 15px 15px 10px black;
+}
+
+p {
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+}
+
+.center {
+    top: 48%;
+    left: 48%;
+    width: 10px;
+    height: 10px;
+    border-radius: 48%;
+    background: #000;
+    position: absolute;
+}
+
+.seconds {
+    top: 20px;
+    left: 49%;
+    width: 1px;
+    height: 130px;
+    position: absolute;
+    animation-name: seconds;
+    animation-duration: 60s;
+    transform-origin: 0% 100%;
+    background: rgb(0, 0, 0);
+    animation-iteration-count: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes seconds {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.minutes {
+    top: 14%;
+    left: 49%;
+    width: 3px;
+    height: 110px;
+    position: absolute;
+    animation-name: seconds;
+    animation-duration: 3600s;
+    transform-origin: 0% 100%;
+    background: rgb(0, 0, 0);
+    animation-iteration-count: linear;
+    animation-iteration-count: infinite;
+}
+
+.hours {
+    top: 19%;
+    left: 49%;
+    width: 5px;
+    height: 90px;
+    position: absolute;
+    animation-name: seconds;
+    animation-duration: 86400s;
+    transform-origin: 0% 100%;
+    background: rgb(0, 0, 0);
+    animation-iteration-count: linear;
+    animation-iteration-count: infinite;
+}
+
+.one {
+    top: calc(15% - 3 * (6px));
+    left: calc(75% - 3 * (5px));
+}
+
+.two {
+    top: calc(30% - 3 * (6px));
+    left: calc(85% - 3 * (3px));
+}
+
+.three {
+    top: calc(50% - 3 * (6px));
+    left: calc(100% - 3 * (10px));
+}
+
+.four {
+    top: calc(70% - 3 * (7px));
+    left: calc(95% - 3 * (10px));
+}
+
+.five {
+    top: calc(80% - 3 * (3px));
+    left: calc(75% - 3 * (5px));
+}
+.six {
+    left: calc(50% - 2px);
+    top: calc(90% - 3 * (7px));
+}
+
+.seven {
+    top: calc(80% - 3 * (3px));
+    left: calc(35% - 3 * 6px);
+}
+
+.eight {
+    top: calc(70% - 3 * (7px));
+    left: calc(20% - 3 * 7px);
+}
+
+.nine {
+    top: calc(50% - 3 * (6px));
+    left: calc(15% - 3 * (7px));
+}
+
+.ten {
+    top: calc(30% - 3 * (6px));
+    left: calc(20% - 3 * (7px));
+}
+
+.eleven {
+    top: calc(15% - 3 * (6px));
+    left: calc(35% - 3 * (7px));
+}
+
+.twelve {
+    left: calc(50% - 6px);
+    top: calc(10% - 3 * (7px));
+}
